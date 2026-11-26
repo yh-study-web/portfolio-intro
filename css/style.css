@@ -3,7 +3,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{font-family:'Pretendard',-apple-system,'Noto Sans KR',sans-serif;color:var(--navy);line-height:1.6;letter-spacing:-.02em;word-break:keep-all;overflow-x:hidden}
 img{max-width:100%;display:block}ul{list-style:none}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
-.inner{width:100%;max-width:1440px;margin:0 auto;padding:0 40px}
+.inner{width:100%;max-width:1440px;margin:0 auto;padding:0 40px;}
 @media(min-width:1500px){.inner{padding:0}}
 /* header */
 .header{position:fixed;top:0;left:0;right:0;height:72px;background:#fff;z-index:50;box-shadow:0 1px 0 #eef0f5}
@@ -35,7 +35,11 @@ img{max-width:100%;display:block}ul{list-style:none}a{color:inherit;text-decorat
 .sub{font-size:14px;color:var(--txt);margin-bottom:56px}
 /* about */
 .profile{display:grid;grid-template-columns:auto 1.3fr 1fr;align-items:center;gap:48px;padding:56px 48px 100px;border-radius:12px;position:relative;overflow:hidden;background:linear-gradient(180deg,#eeedfb 40%,#dcd6f8 100%)}
-.profile::after{content:"";position:absolute;left:0;right:0;bottom:0;height:60px;background:#cfc8f5;opacity:.55;border-radius:50% 50% 0 0/100% 100% 0 0}
+.profile::after{content:"";position:absolute;left:0;right:0;bottom:0;height:60px; /*background:#cfc8f5;opacity:.55;border-radius:50% 50% 0 0/100% 100% 0 0;*/
+background-image: url(../images/about_inner_bg_1.png), url(../images/about_inner_bg_2.png), url(../images/about_inner_bg_3.png);
+background-repeat: no-repeat;
+background-position: left top;
+}
 .profile>*{position:relative;z-index:1}
 .profile__photo{width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid #fff}
 .profile h3{font-size:22px;margin:6px 0 8px}.profile h3 small{font-size:13px;color:#6b7690;font-weight:600}
